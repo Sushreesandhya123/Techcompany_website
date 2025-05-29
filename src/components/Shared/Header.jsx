@@ -50,7 +50,7 @@ export default function Header() {
   return (
     <div>
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md py-3" : "bg-white py-4"}`}>
-        <div className="flex justify-between items-center w-full px-4 md:px-6 lg:px-8 max-w-7xl mx-auto h-full relative">
+        <div className="flex justify-between items-center w-full max-w-7xl mx-auto h-full relative">
           <Link to="/" className="flex items-center h-full">
             <img 
               src={logo} 

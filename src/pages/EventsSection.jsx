@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import moliiVideo from '../assets/Moli - Introduction .mp4';
-import KuluVideo from '../assets/Kulu - Teaser v1_0.mp4';
-import AITerpVideo from '../assets/AI Terp - Teaser.mp4';
+// import moliiVideo from '../assets/Moli - Introduction .mp4';
+// import KuluVideo from '../assets/Kulu - Teaser v1_0.mp4';
+// import AITerpVideo from '../assets/AI Terp - Teaser.mp4';
 
 const EventGallery = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
@@ -21,7 +21,7 @@ const EventGallery = () => {
     },
     { 
       type: 'video', 
-      url: moliiVideo, 
+      url: "https://civiqdevcirgb380.blob.core.windows.net/juvvaltech-web-video/Moli - Introduction .mp4", 
       thumbnail: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       text: "Moli Released"
     },
@@ -37,7 +37,7 @@ const EventGallery = () => {
     },
     { 
       type: 'video', 
-      url: KuluVideo, 
+      url: "https://civiqdevcirgb380.blob.core.windows.net/juvvaltech-web-video/Kulu - Teaser v1_0.mp4", 
       thumbnail: "https://images.unsplash.com/photo-1581092921461-39b2f2f8d4f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       text: "Kulu Teaser Video"
     },
@@ -48,7 +48,7 @@ const EventGallery = () => {
     },
     { 
       type: 'video', 
-      url: AITerpVideo, 
+      url: "https://civiqdevcirgb380.blob.core.windows.net/juvvaltech-web-video/AI Terp - Teaser.mp4", 
       thumbnail: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       text: "AI Terp Demo"
     }

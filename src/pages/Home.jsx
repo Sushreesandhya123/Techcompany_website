@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import FeaturesSection from '../components/Home/FeaturesSection';
 import SolutionsCards from '../components/About/SolutionsCards';
-import moliVideo from '../assets/moli page animation_2.mp4';
+// import moliVideo from '../assets/moli page animation_2.mp4';
 import MoliLogo from '../assets/image (6).png';
 import KuluLogo from '../assets/image (12).png';
 import AiTerp from '../assets/image (10).png';
@@ -123,7 +123,7 @@ const Home = () => {
 
           <div className="flex justify-center">
             <video
-              src={moliVideo}
+              src="https://civiqdevcirgb380.blob.core.windows.net/juvvaltech-web-video/moli page animation_2.mp4"
               autoPlay
               loop
               muted
