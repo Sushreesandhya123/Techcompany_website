@@ -56,7 +56,7 @@ const Home = () => {
               Empowering Justice Through Technology
             </p>
             <p className="text-lg text-gray-600">
-              Innovative Software Solutions for Modern Courts Across America
+              Innovative software solutions reshaping American courtrooms.
             </p>
 
             <div className="flex flex-wrap gap-4">

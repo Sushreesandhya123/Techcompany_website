@@ -1,5 +1,8 @@
 import React from "react";
 import Customerscards from '../pages/Customerscards';
+import AIimg from '../assets/AI.jpg';
+import GameImg from '../assets/Game.png';
+import jurryImg from '../assets/Jurry.png';
 
 const CustomerStories = () => {
   return (
@@ -61,12 +64,12 @@ const CustomerStories = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="relative pt-[56.25%] bg-gray-800">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  </svg> */}
                 </div>
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Courtroom" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
+                <img src={GameImg} alt="Courtroom" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">"Game-Changing Efficiency"</h3>
@@ -89,12 +92,12 @@ const CustomerStories = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="relative pt-[56.25%] bg-gray-800">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  </svg> */}
                 </div>
-                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Jury selection" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
+                <img src={jurryImg} alt="Jury selection" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">"Jury Selection Revolutionized"</h3>
@@ -117,12 +120,12 @@ const CustomerStories = () => {
             <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow">
               <div className="relative pt-[56.25%] bg-gray-800">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+                  </svg> */}
                 </div>
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="AI technology" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
+                <img src={AIimg} alt="AI technology" className="absolute inset-0 w-full h-full object-cover opacity-50"/>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">"When Human Interpreters Aren't Enough"</h3>
