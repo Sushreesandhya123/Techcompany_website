@@ -6,17 +6,17 @@ import RequestDemoButton from '../RequestDemoButton'; // Adjust path if needed
 
 const cards = [
     {
-    title: "Moli = Interpreture Scheduling Software",
+    title: "Moli - Interpreture Scheduling Software",
     description: "Moli revolutionizes legal interpretation and court efficiency through AI-powered scheduling, real-time interpreter management, and seamless communication tools. From assigning jobs to managing invoices, Moli ensures courts operate faster, smarter, and more transparently.",
     extra: "With AI Terp, experience real-time interpretation when human interpreters aren't available — ensuring no hearing is ever delayed.",
     button: "Request Demo",
     learnMore: "Learn more",
-    href: "#",
+    href: "https://www.mymoliapp.com/",
     image: moliImg
   },
 
   {
-  title: 'Kulu = Smarter Jury Management for Courts',
+  title: 'Kulu - Smarter Jury Management for Courts',
   description:
     'Kulu is a smart jury management platform that streamlines the entire jury selection process with tools for summons, tracking, and finalization—designed to improve efficiency, transparency, and compliance for courts at all levels.',
   extra:
@@ -28,8 +28,8 @@ const cards = [
 },
 
   {
-  title: "AI-Terp = Interpretation Without Limits",
-  description: "AI-Terp is Moli’s built-in AI interpreter, delivering real-time multilingual translation when human interpreters are unavailable. It ensures hearings continue smoothly, breaking down language barriers instantly and accurately.",
+  title: "AI Terp - Interpretation Without Limits",
+  description: "AI-Terp is Moli's built-in AI interpreter, delivering real-time multilingual translation when human interpreters are unavailable. It ensures hearings continue smoothly, breaking down language barriers instantly and accurately.",
   extra: "With support for multiple languages and seamless court integration, AI-Terp keeps justice accessible and uninterrupted.",
   button: "See AI-Terp in Action",
   learnMore: "Learn more",
@@ -56,9 +56,9 @@ const SolutionsCards = () => {
             <div className="md:w-1/2 space-y-4">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
                 <span className="text-green-600">
-                  {card.title.split('=')[0].trim()}
+                  {card.title.split('-')[0].trim()}
                 </span>{' '}
-                = {card.title.split('=')[1].trim()}
+                - {card.title.split('-')[1].trim()}
               </h2>
               <p className="text-gray-700">{card.description}</p>
               <p className="text-gray-700">{card.extra}</p>

@@ -1,5 +1,6 @@
 import React from "react";
 import { FaApple, FaGooglePlay, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import microsoftImg from '../../assets/microsoftstore.png'
 import RequestDemoButton from '../RequestDemoButton';
 const Footer = () => {
   const handleDemoClick = () => {
@@ -94,10 +95,8 @@ const Footer = () => {
               AI-powered solutions bridging communication gaps in legal systems and beyond.
             </p>
             <div className="flex gap-4 text-4xl">
-              <a href="#" className="hover:text-white transition"><FaLinkedinIn /></a>
-              <a href="#" className="hover:text-white transition"><FaTwitter /></a>
-              <a href="#" className="hover:text-white transition"><FaInstagram /></a>
-              <a href="#" className="hover:text-white transition"><FaFacebookF /></a>
+              <a href="https://www.linkedin.com/company/moli-interpreter-scheduling-software/" className="hover:text-white transition"><FaLinkedinIn /></a>
+              
             </div>
           </div>
 
@@ -127,9 +126,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-2xl mb-3 font-bold ">Get Our Apps</h3>
             <div className="flex items-center gap-4">
-              {/* Microsoft Store Button */}
+             
               <a
-                href="https://apps.microsoft.com/detail/9NZKMQRD07L8?hl=en-us&gl=IN&ocid=pdpshare"
+                href="https://apps.apple.com/us/app/moli-app/id6479742909"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="App Store"
@@ -160,12 +159,29 @@ const Footer = () => {
                   className="hover:opacity-80 transition"
                 />
               </a>
+              <a
+            href="https://apps.microsoft.com/detail/9NZKMQRD07L8?hl=en-us&gl=IN&ocid=pdpshare"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Microsoft Store"
+          >
+            <img
+              src={microsoftImg}
+              alt="Microsoft Store"
+              loading="lazy"
+              width="135"
+              height="40"
+              className="hover:opacity-80 transition"
+            />
+          </a>
+
             </div>
+            
 
             <div className="mt-6">
               <h4 className="text-white text-2xl font-bold mb-2">Contact Us</h4>
-              <p className="text-sm mb-2">support@juvvaltech.com</p>
-              <p className="text-sm mb-2">+1 (555) 123-4567</p>
+              <p className="text-sm mb-2">contact@juvvaltech.com</p>
+              <p className="text-sm mb-2">+1 (317) 883-9894</p>
             </div>
           </div>
         </div>

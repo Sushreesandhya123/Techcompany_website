@@ -23,10 +23,10 @@ export default function Header() {
     {
       name: "Moli",
       description: "Smart digital interpreter app for real-time multilingual communication",
-      link: "/MoliProductPage",
+      link: "https://www.mymoliapp.com/",
       logo: MoliLogo,
       isNew: false,
-      features: ["Voice & text", "Multiple languages", "Real-time translation"]
+      features: ["Bridging Courts & Cultures", "Smart Interpretation Management for Smarter Courts", " Empowering Courtrooms Through Technology"]
     },
     
     {
@@ -35,7 +35,7 @@ export default function Header() {
       link: "/kulu",
       logo: KuluLogo,
       isNew: false,
-      features: ["Juror management", "Case scheduling", "Payment systems"]
+      features: ["Effortless Jury Management Starts Heret", "Kulu: The Smarter Way to Manage Courtrooms.", "Simplify Jury Duty & Streamline Court Operations"]
     },
     {
       name: "AI-terp",
@@ -43,7 +43,7 @@ export default function Header() {
       link: "/ai-terp",
       logo: AiTerp,
       isNew: true,
-      features: ["Advanced accuracy", "Context-aware", "Industry-specific"]
+      features: ["Advanced accuracy", "AI Terp: Real-Time Interpretation. No Human Needed", "Seamless AI Interpretation for Moli Conversations"]
     }
   ];
 

@@ -78,20 +78,20 @@ export default function ProductDropdown({ onClose, productsData }) {
                   >
                     Learn more →
                   </Link>
-                  <Link
+                  {/* <Link
                     to={product.link}
                     className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                     onClick={onClose}
                   >
                     Try for free
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
           ))}
         </div>
         
-        <div className="mt-6 text-center">
+        {/* <div className="mt-6 text-center">
           <Link 
             to="/all-products" 
             className="inline-block bg-gray-100 hover:bg-gray-200 text-gray-800 px-6 py-2 rounded-lg font-medium transition-colors"
@@ -99,7 +99,7 @@ export default function ProductDropdown({ onClose, productsData }) {
           >
             View All Products
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

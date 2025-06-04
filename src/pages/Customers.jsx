@@ -29,7 +29,7 @@ const CustomerStories = () => {
 </section> */}
 
 
-  <section className="py-20 bg-white">
+  {/* <section className="py-20 bg-white">
   <div className="container mx-auto px-4 max-w-7xl">
     <div className="flex flex-col lg:flex-row gap-12 items-center">
       <div className="lg:w-1/2">
@@ -45,33 +45,10 @@ const CustomerStories = () => {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2">
-        <span className="text-blue-600 font-medium">Court Operations</span>
-        <h2 className="text-3xl font-bold mt-2 mb-6">Innovation for the Modern Court</h2>
-        
-        <div className="prose max-w-none mb-8">
-          <p className="text-lg">
-           Boosting Accuracy, Access, and Automation with JuvvalTech
-           With Moli ensuring seamless communication and Kulu optimizing jury selection, courts now operate with increased transparency and reduced administrative load.
-          </p>
-          <p>
-            By adopting Moli, they gained:
-          </p>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Real-time visibility into interpreter job statuses</li>
-            <li>Centralized dashboard for performance and activity tracking</li>
-            <li>Automated bulk job invitations and email communication</li>
-            <li>Enhanced compliance with interpreter certification verification</li>
-          </ul>
-        </div>
-        
-        <div className="flex items-center space-x-4">
-          {/* You can add CTA buttons or icons here if needed */}
-        </div>
-      </div>
+      
     </div>
   </div>
-</section>
+</section> */}
 
 
       {/* Video Testimonials */}

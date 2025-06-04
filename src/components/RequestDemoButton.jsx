@@ -6,6 +6,8 @@ const RequestDemoButton = () => {
 
   const handleClick = () => {
     navigate('/contact');
+    // Scroll to top after navigation
+    window.scrollTo(0, 0);
   };
 
   return (
