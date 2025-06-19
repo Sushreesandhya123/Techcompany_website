@@ -2,6 +2,7 @@
   "name": "juvvaltech",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sushreesandhya123.github.io/Techcompany_website",
   "dependencies": {
     "@headlessui/react": "^2.2.4",
     "@heroicons/react": "^2.2.0",
@@ -19,12 +20,15 @@
     "react-scroll": "^1.9.3",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+    "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -45,6 +49,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^3.4.17"
   }
