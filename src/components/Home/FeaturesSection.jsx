@@ -15,7 +15,7 @@ const FeaturesSection = () => {
   const tabs = [
     {
       icon: <FaGlobe className="w-6 h-6" />,
-      title: "Huge Interpreter Network"
+      title: "Large Interpreter Network"
     },
     {
       icon: <FaLanguage className="w-6 h-6" />,
@@ -37,7 +37,7 @@ const FeaturesSection = () => {
 
   const slides = [
     {
-    title: "Huge Interpreter Network",
+    title: "Large Interpreter Network",
     subtitle: "Connect with the largest legal interpreter network",
      description: "Access our vast network of certified interpreters available across multiple jurisdictions. With Moli, you'll never face delays due to interpreter shortages. Our extensive database ensures you get the right professional for every case, every time.",
     features: [

@@ -1,12 +1,23 @@
-import React from "react";
-import { FaApple, FaGooglePlay, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaApple, FaGooglePlay, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 import microsoftImg from '../../assets/microsoftstore.png'
 import RequestDemoButton from '../RequestDemoButton';
+import { useNavigate } from "react-router-dom";
+
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
   const handleDemoClick = () => {
-    // Add your click logic here, e.g. open modal or route to demo form
-    alert('Demo requested!');
+    if (email) {
+      // Redirect to Contact page with email as query parameter
+      navigate(`/contact?email=${encodeURIComponent(email)}`);
+    } else {
+      // If no email provided, just go to the contact page
+      navigate('/contact');
+    }
   };
+
   return (
     <div className="bg-gray-900 text-white">
       {/* CTA Section */}
@@ -42,6 +53,8 @@ const Footer = () => {
                   id="email"
                   placeholder="Enter your business email"
                   className="flex-1 px-4 py-3 rounded-l bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <RequestDemoButton onClick={handleDemoClick} />
               </div>
@@ -60,19 +73,11 @@ const Footer = () => {
               <p className="text-sm text-gray-400">
                 Trusted by legal professionals and courts nationwide
               </p>
-              {/* <img 
-                src="https://web-static.wrike.com/tp/storage/uploads/740af830-7a52-402d-bfb2-629a6df4079c/rating-component-5-logos.svg" 
-                alt="Trusted companies"
-                width="100"
-                height="20"
-                loading="lazy"
-                className="mt-2"
-              /> */}
             </div>
           </div>
 
           {/* Right Image */}
-           <div className="w-1/4 flex justify-end -mr-10 ">
+          <div className="w-1/4 flex justify-end -mr-10 ">
             <img 
               src="https://web-static.wrike.com/tp/static/assets/img/cta/v3/center/dark/5.svg" 
               alt="Wrike illustration right"
@@ -96,7 +101,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 text-4xl">
               <a href="https://www.linkedin.com/company/moli-interpreter-scheduling-software/" className="hover:text-white transition"><FaLinkedinIn /></a>
-              
+              <a href="https://www.youtube.com/@mymoliapp" className="hover:text-white transition"><FaYoutube /></a>
             </div>
           </div>
 
@@ -160,24 +165,22 @@ const Footer = () => {
                 />
               </a>
               <a
-            href="https://apps.microsoft.com/detail/9NZKMQRD07L8?hl=en-us&gl=IN&ocid=pdpshare"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Microsoft Store"
-          >
-            <img
-              src={microsoftImg}
-              alt="Microsoft Store"
-              loading="lazy"
-              width="135"
-              height="40"
-              className="hover:opacity-80 transition"
-            />
-          </a>
-
+                href="https://apps.microsoft.com/detail/9NZKMQRD07L8?hl=en-us&gl=IN&ocid=pdpshare"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Microsoft Store"
+              >
+                <img
+                  src={microsoftImg}
+                  alt="Microsoft Store"
+                  loading="lazy"
+                  width="135"
+                  height="40"
+                  className="hover:opacity-80 transition"
+                />
+              </a>
             </div>
             
-
             <div className="mt-6">
               <h4 className="text-white text-2xl font-bold mb-2">Contact Us</h4>
               <p className="text-sm mb-2">contact@juvvaltech.com</p>

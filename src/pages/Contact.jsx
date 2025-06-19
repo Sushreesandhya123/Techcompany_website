@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import contact1 from '../assets/contact1.jpg';
 
 const Contact = () => {
+  const location = useLocation();
   const [formData, setFormData] = useState({
     email: '',
     name: '',
@@ -11,6 +13,19 @@ const Contact = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  useEffect(() => {
+    // Check for email in query params
+    const queryParams = new URLSearchParams(location.search);
+    const emailParam = queryParams.get('email');
+    
+    if (emailParam) {
+      setFormData(prev => ({
+        ...prev,
+        email: decodeURIComponent(emailParam)
+      }));
+    }
+  }, [location.search]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -122,7 +137,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="request_type" className="block text-sm font-medium text-gray-700 mb-1">Request Type*</label>
+                  <label htmlFor="request_type" className="block text-sm font-medium text-gray-700 mb-1">Request For*</label>
                   <select
                     id="request_type"
                     name="request_type"
@@ -132,17 +147,19 @@ const Contact = () => {
                     required
                   >
                     <option value="">Select request type</option>
-                    <option value="Court">Court</option>
-                    <option value="Interpreter">Interpreter</option>
+                    <option value="Court">Moli - Court Software </option>
+                    <option value="Interpreter">Interpreter Software </option>
+                    <option value="Kulu">Kulu – Court Software</option>
+                    <option value="AI Terp ">AI Terp  </option>
                   </select>
                 </div>
                 
                 <div>
-                  <label htmlFor="court_name" className="block text-sm font-medium text-gray-700 mb-1">Court Name*</label>
+                  <label htmlFor="Court/Entity Name " className="block text-sm font-medium text-gray-700 mb-1">Court/Entity Name*</label>
                   <input
                     type="text"
-                    id="court_name"
-                    name="court_name"
+                    id="Court/Entity Name "
+                    name="Court/Entity Name "
                     value={formData.court_name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
@@ -152,7 +169,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number (Optional)</label>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number*</label>
                   <input
                     type="tel"
                     id="phone"
@@ -161,6 +178,7 @@ const Contact = () => {
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                     placeholder="+1 (___) ___-____"
+                    required
                   />
                 </div>
                 
@@ -190,13 +208,32 @@ const Contact = () => {
             </div>
             
             {/* Image Side */}
-            <div className="hidden lg:block">
+            <div className="hidden lg:block relative">
               <div className="h-full">
                 <img 
                   src={contact1} 
                   alt="Contact us" 
-                  className="w-full h-full"
+                  className="w-full h-full "
                 />
+              </div>
+              
+              {/* Contact Details Section - Added below the image */}
+              <div className="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 p-6">
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Feel free to contact us</h3>
+                  <p className="text-gray-700 mb-4">
+                    "Curious about our interpreter services? Reach out to our expert support team for guidance. 
+                    We're here to assist you in achieving clear and effective communication. Reach out today!"
+                  </p>
+                  <div className="space-y-2">
+                    <p className="text-blue-600 font-medium">
+                      <a href="mailto:contact@juvvaltech.com">contact@juvvaltech.com</a>
+                    </p>
+                    <p className="text-gray-800 font-medium">
+                      <a href="tel:+13178839894">+1 (317) 883-9894</a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

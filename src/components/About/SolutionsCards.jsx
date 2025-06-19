@@ -6,7 +6,7 @@ import RequestDemoButton from '../RequestDemoButton'; // Adjust path if needed
 
 const cards = [
     {
-    title: "Moli - Interpreture Scheduling Software",
+    title: "Moli - Interpreter Scheduling Software",
     description: "Moli revolutionizes legal interpretation and court efficiency through AI-powered scheduling, real-time interpreter management, and seamless communication tools. From assigning jobs to managing invoices, Moli ensures courts operate faster, smarter, and more transparently.",
     extra: "With AI Terp, experience real-time interpretation when human interpreters aren't available — ensuring no hearing is ever delayed.",
     button: "Request Demo",
